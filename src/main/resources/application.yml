@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3307/stock_example
+    username: root
+    password: 1234
+    hikari:
+      maximum-pool-size: 30
+
+logging:
+  level:
+    org.hibernate:
+      SQL: DEBUG
+      type:
+        descriptor:
+          sql:
+            BasicBinder: ERROR
