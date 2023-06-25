@@ -1,12 +1,11 @@
 package com.example.stock.facade;
 
-import com.example.stock.domain.Stock;
 import com.example.stock.repository.LockRepository;
 import com.example.stock.service.StockService;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-@Service
+@Component
 public class NamedLockFacade {
     private final LockRepository lockRepository;
     private final StockService stockService;
